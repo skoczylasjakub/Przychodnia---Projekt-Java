@@ -27,7 +27,7 @@ public class LoginApplication extends Application {
             Scene login_scene = new Scene(root);
             stage.setScene(login_scene);
             stage.show();
-        } catch (Exception e){
+        } catch (Exception e){ 
             e.printStackTrace();
         }
     }

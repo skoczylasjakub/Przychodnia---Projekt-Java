@@ -9,6 +9,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+import java.util.function.UnaryOperator;
 
 public class DoctorController {
 
@@ -36,7 +39,7 @@ public class DoctorController {
 
     @FXML
     void addVisitClick(ActionEvent event) {
-
+    //add visit to DB
     }
 
     @FXML
@@ -64,6 +67,8 @@ public class DoctorController {
 
     }
 
+
+
     @FXML
     void myVisitsClick(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
@@ -80,7 +85,11 @@ public class DoctorController {
     }
 
     @FXML
-    void onCreatePrescriptionClick(ActionEvent event) {
+    void onCreatePrescriptionClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("new_prescription.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
 
     }
 
@@ -131,6 +140,7 @@ public class DoctorController {
 
     @FXML
     void addPatientClick(ActionEvent event) {
+        //add patient to DB
 
     }
 
@@ -156,6 +166,32 @@ public class DoctorController {
     void searchVisitClick(ActionEvent event) {
 
     }
+
+    @FXML
+    private TextField comment;
+
+    @FXML
+    private TextField medicine;
+
+    @FXML
+    private TextField patientID;
+
+    @FXML
+    private TextField pieces;
+
+    @FXML
+    void createPrescriptionClick(ActionEvent event) {
+
+    }
+
+    @FXML
+    private ComboBox<?> listOfPatient;
+
+    @FXML
+    private Spinner<?> minInput;
+
+    @FXML
+    private ComboBox<?> room;
 
 
 

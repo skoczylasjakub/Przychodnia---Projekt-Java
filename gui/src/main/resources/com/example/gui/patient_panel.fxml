@@ -12,5 +12,10 @@
       <Button fx:id="exitApp" layoutX="534.0" layoutY="14.0" mnemonicParsing="false" onAction="#onExitAppClick" text="Wyjscie" />
       <Button fx:id="myVisits" layoutX="250.0" layoutY="140.0" mnemonicParsing="false" onAction="#onMyVisitsClick" prefHeight="26.0" prefWidth="130.0" text="Moje wizyty" />
       <Button fx:id="myPrescription" layoutX="250.0" layoutY="187.0" mnemonicParsing="false" onAction="#onMyPrescriptionAction" prefHeight="26.0" prefWidth="130.0" text="Moje recepty" />
+      <Label layoutX="249.0" layoutY="14.0" text="Pacjent" textFill="#385481">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
